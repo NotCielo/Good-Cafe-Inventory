@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-cafe-500 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-cafe-600 active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-cafe-200 bg-white px-5 py-2.5 text-sm font-semibold text-cafe-700 transition hover:bg-cafe-50 active:scale-[0.98];
+  }
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-red-500 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-red-600 active:scale-[0.98];
+  }
+  .input-field {
+    @apply w-full rounded-xl border border-ink-100 bg-white px-4 py-2.5 text-sm text-ink-800 placeholder:text-ink-300 focus:border-cafe-400 focus:outline-none focus:ring-2 focus:ring-cafe-100;
+  }
+  .card {
+    @apply rounded-2xl bg-white p-4 shadow-soft ring-1 ring-ink-100/60;
+  }
+  .badge-low {
+    @apply inline-flex items-center gap-1 rounded-full bg-red-50 px-2.5 py-1 text-xs font-semibold text-red-600;
+  }
+  .badge-ok {
+    @apply inline-flex items-center gap-1 rounded-full bg-cafe-50 px-2.5 py-1 text-xs font-semibold text-cafe-700;
+  }
+  .badge-flagged {
+    @apply inline-flex items-center gap-1 rounded-full bg-amber-50 px-2.5 py-1 text-xs font-semibold text-amber-600;
+  }
+}

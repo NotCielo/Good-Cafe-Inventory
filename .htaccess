@@ -1,0 +1,3 @@
+# Good Cafe Inventory - basic Apache config (for Laragon/XAMPP)
+DirectoryIndex index.php
+Options -Indexes
