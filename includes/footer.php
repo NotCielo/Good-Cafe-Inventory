@@ -15,6 +15,6 @@
   if (navOverlay) navOverlay.addEventListener('click', closeNav);
 </script>
 <?php endif; ?>
-<script src="<?= base_path() ?>/assets/js/app.js"></script>
+<script src="/assets/js/app.js"></script>
 </body>
 </html>

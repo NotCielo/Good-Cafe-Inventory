@@ -41,15 +41,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Log in · Good Cafe Inventory</title>
-<link rel="stylesheet" href="./assets/css/tailwind.css">
-<link rel="icon" type="image/png" href="./assets/img/favicon.png">
+<link rel="stylesheet" href="/assets/css/tailwind.css">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
 </head>
 <body class="min-h-screen bg-cafe-500 font-body antialiased">
 <div class="min-h-screen flex items-center justify-center px-4 py-10">
   <div class="w-full max-w-sm">
 
     <div class="mb-6 flex flex-col items-center text-center">
-      <img src="./assets/img/logo.png" alt="Good Cafe" class="h-16 w-16 rounded-full shadow-card mb-3">
+      <img src="/assets/img/logo.png" alt="Good Cafe" class="h-16 w-16 rounded-full shadow-card mb-3">
       <h1 class="font-display text-2xl font-bold text-white">good<span class="text-white">cafe</span></h1>
       <p class="text-cafe-50 text-sm mt-1">Inventory Management</p>
     </div>

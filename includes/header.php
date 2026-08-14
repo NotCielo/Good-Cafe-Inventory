@@ -9,8 +9,8 @@ $role = current_role();
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= h($page_title ?? 'Good Cafe') ?> · Good Cafe Inventory</title>
-<link rel="stylesheet" href="<?= $bp ?>/assets/css/tailwind.css">
-<link rel="icon" type="image/png" href="<?= $bp ?>/assets/img/favicon.png">
+<link rel="stylesheet" href="/assets/css/tailwind.css">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
 </head>
 <body class="min-h-screen bg-ink-50 font-body text-ink-800 antialiased">
 
@@ -25,7 +25,7 @@ $role = current_role();
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
         <a href="<?= $bp ?>/dashboard.php" class="flex items-center gap-2">
-          <img src="<?= $bp ?>/assets/img/logo.png" alt="Good Cafe" class="h-9 w-9 rounded-full shadow-soft">
+          <img src="/assets/img/logo.png" alt="Good Cafe" class="h-9 w-9 rounded-full shadow-soft">
           <span class="font-display text-lg font-bold text-cafe-700 leading-none">good<span class="text-cafe-700">cafe</span></span>
         </a>
       </div>
@@ -59,7 +59,7 @@ $role = current_role();
     <div class="absolute left-0 top-0 h-full w-72 bg-white shadow-card p-4 flex flex-col gap-1">
       <div class="flex items-center justify-between mb-4">
         <span class="flex items-center gap-2 font-display text-lg font-bold text-cafe-700">
-          <img src="<?= $bp ?>/assets/img/logo.png" alt="Good Cafe" class="h-8 w-8 rounded-full">
+          <img src="/assets/img/logo.png" alt="Good Cafe" class="h-8 w-8 rounded-full">
           good<span class="text-ink-800">cafe</span>
         </span>
         <button id="navClose" class="rounded-lg p-2 text-ink-500 hover:bg-ink-100" aria-label="Close menu">
