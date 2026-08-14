@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </form>
     </div>
 
-    <p class="text-center text-xs text-cafe-50 mt-5">Good Cafe © <?= date('Y') ?></p>
+    <p class="text-center text-xs text-cafe-50 mt-5">CieloDev © <?= date('Y') ?></p>
   </div>
 </div>
 </body>
