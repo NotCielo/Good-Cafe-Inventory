@@ -4,3 +4,16 @@
 vendor/
 node_modules/
 *.log
+
+# Local data and credentials
+.env
+.env.*
+!.env.example
+node_modules/
+vendor/
+**/uploads/*
+!**/uploads/.htaccess
+!**/uploads/.gitkeep
+*.exe
+*.o
+*.log

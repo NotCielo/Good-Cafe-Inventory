@@ -16,12 +16,6 @@ CREATE TABLE IF NOT EXISTS users (
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Seed accounts. Password for BOTH is: goodcafe0125
--- (change this after first login by updating password_hash with PHP's password_hash())
-INSERT INTO users (username, password_hash, full_name, role) VALUES
-('goodcafeAdmin', '$2b$10$4R1F4sKZidR4I2DcpP8eYu68Iqa0a3QnrE5oGkNIlihE/hIg.dSUq', 'Admin', 'admin'),
-('goodcafeStaff', '$2b$10$4R1F4sKZidR4I2DcpP8eYu68Iqa0a3QnrE5oGkNIlihE/hIg.dSUq', 'Staff', 'staff');
-
 -- ------------------------------------------------------------
 -- Categories (2-level: top-level "department" + sub-category)
 -- parent_id NULL  => top-level (e.g. Kitchen, Station, Others)
@@ -36,15 +30,6 @@ CREATE TABLE IF NOT EXISTS categories (
   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   FOREIGN KEY (parent_id) REFERENCES categories(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-INSERT INTO categories (parent_id, name) VALUES
-(NULL, 'Kitchen'),
-(NULL, 'Station');
-
-INSERT INTO categories (parent_id, name) VALUES
-(1, 'Rice Meals'), (1, 'Pasta'), (1, 'Snacks'),
-(2, 'Coffee'), (2, 'Milk'), (2, 'Syrup'), (2, 'Pastry'),
-(2, 'Sauce'), (2, 'Cups & Packaging');
 
 -- ------------------------------------------------------------
 -- Items
