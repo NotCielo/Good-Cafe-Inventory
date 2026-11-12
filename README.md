@@ -2,6 +2,10 @@
 
 A responsive inventory workspace with a four-digit keypad, staff/admin access, stock tracking, a purchasing list, and an audit trail. The frontend is deployed on Vercel; all inventory and purchase data is stored in Supabase Postgres.
 
+## Branding
+
+The interface follows [Good Cafe & Co. on Instagram](https://www.instagram.com/goodcafeph/): the original smiling logo, lime green (#5EC600), white surfaces, and rounded headings. The high-resolution logo already present in the repository is reused without modification. Small text uses a darker green for readable contrast.
+
 ## Everyday workflow
 
 - Admins create and edit items and two-level categories, and archive or restore records.
